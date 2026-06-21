@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
 
-class FStorageTeleporterModule : public IModuleInterface
+class FStorageTeleporterReduxModule : public IModuleInterface
 {
 public:
 

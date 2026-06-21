@@ -1,24 +1,24 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.2.2",
-	"SemVersion": "1.2.2",
+	"VersionName": "1.0.0",
+	"SemVersion": "1.0.0",
 	"GameVersion": ">=491125",
-	"FriendlyName": "StorageTeleporter",
+	"FriendlyName": "Storage Teleporter Redux",
 	"Description": "Lets you teleport items between storage endpoints.",
 	"Category": "Logistics",
-	"CreatedBy": "Blockout22",
-	"CreatedByURL": "",
-	"DocsURL": "",
+	"CreatedBy": "Blockout22 (original), KSwapBytes (Redux)",
+	"CreatedByURL": "https://github.com/blockout22",
+	"DocsURL": "https://github.com/KSwapBytes/StorageTeleporterRedux",
 	"MarketplaceURL": "",
-	"SupportURL": "https://discord.gg/ds696q4",
+	"SupportURL": "https://github.com/KSwapBytes/StorageTeleporterRedux/issues",
 	"CanContainContent": true,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
 	"LocalizationTargets": [
 		{
-			"Name": "StorageTeleporter",
+			"Name": "StorageTeleporterRedux",
 			"LoadingPolicy": "Always",
 			"ConfigGenerationPolicy": "Never"
 		}

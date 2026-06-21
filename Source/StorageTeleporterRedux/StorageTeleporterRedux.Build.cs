@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class StorageTeleporter : ModuleRules
+public class StorageTeleporterRedux : ModuleRules
 {
-	public StorageTeleporter(ReadOnlyTargetRules Target) : base(Target)
+	public StorageTeleporterRedux(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		CppStandard = CppStandardVersion.Cpp20;

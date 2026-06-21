@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 - 2026-06-21
+
+- Renamed the mod reference to `StorageTeleporterRedux` for a separate SMR listing.
+- Added a package redirect from `/StorageTeleporter/` to `/StorageTeleporterRedux/` for save compatibility.
+- Preserved Blockout22's original gameplay, recipes, schematics, and unlock requirements.
+- Updated branding and support links for the Redux release.
+
 ## 1.2.2 - 2026-06-21
 
 - Updated compatibility to Satisfactory 1.2 build 491125 or newer.
