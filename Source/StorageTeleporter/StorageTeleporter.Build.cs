@@ -6,8 +6,37 @@ public class StorageTeleporter : ModuleRules
 {
 	public StorageTeleporter(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		
+		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+		CppStandard = CppStandardVersion.Cpp20;
+
+		PublicDependencyModuleNames.AddRange(new string[] {
+			"Core", "CoreUObject",
+			"Engine",
+			"DeveloperSettings",
+			"PhysicsCore",
+			"InputCore",
+			"GeometryCollectionEngine",
+			"AnimGraphRuntime",
+			"AssetRegistry",
+			"NavigationSystem",
+			"AIModule",
+			"GameplayTasks",
+			"SlateCore", "Slate", "UMG",
+			"RenderCore",
+			"CinematicCamera",
+			"Foliage",
+			"NetCore",
+			"GameplayTags",
+			"Json", "JsonUtilities",
+			"DummyHeaders",
+			"FactoryGame",
+			"SML"
+		});
+
+		if (Target.Type == TargetRules.TargetType.Editor) {
+			PublicDependencyModuleNames.AddRange(new string[] {"AnimGraph"});
+		}
+
 		PublicIncludePaths.AddRange(
 			new string[] {
 				// ... add public include paths required here ...
@@ -22,22 +51,9 @@ public class StorageTeleporter : ModuleRules
 			);
 			
 		
-		PublicDependencyModuleNames.AddRange(
-			new string[]
-			{
-				"Core",
-				// ... add other public dependencies that you statically link with here ...
-			}
-			);
-			
-		
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"CoreUObject",
-				"Engine",
-				"Slate",
-				"SlateCore",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

@@ -1,11 +1,12 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"SemVersion": "1.2.1",
-	"VersionName": "1.2",
+	"VersionName": "1.2.2",
+	"SemVersion": "1.2.2",
+	"GameVersion": ">=491125",
 	"FriendlyName": "StorageTeleporter",
-	"Description": "Lets you Teleport things",
-	"Category": "Modding",
+	"Description": "Lets you teleport items between storage endpoints.",
+	"Category": "Logistics",
 	"CreatedBy": "Blockout22",
 	"CreatedByURL": "",
 	"DocsURL": "",
@@ -15,14 +16,18 @@
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
-	"Plugins": [
+	"LocalizationTargets": [
 		{
-			"Enabled": true,
-			"Name": "SML",
-			"SemVersion": "^3.11.1",
-			"bIsOptional": false
+			"Name": "StorageTeleporter",
+			"LoadingPolicy": "Always",
+			"ConfigGenerationPolicy": "Never"
 		}
 	],
-	"AcceptsAnyRemoteVersion": false,
-	"GameVersion": ">=416835"
+	"Plugins": [
+		{
+			"Name": "SML",
+			"Enabled": true,
+			"SemVersion": "^3.12.0"
+		}
+	]
 }
